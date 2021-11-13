@@ -1,1 +1,1 @@
-# sprint-boot-demo
+# spring-boot-demo
