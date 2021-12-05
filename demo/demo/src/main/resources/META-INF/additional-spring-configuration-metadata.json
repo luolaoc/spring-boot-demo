@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "name": "application.name",
+            "description": "default value from artifactId in pom.xml",
+            "type": "java.lang.String"
+        },
+        {
+            "name": "application.version",
+            "description": "default from version in pom.xml",
+            "type": "java.lang.String"
+        }
+    ]
+}
