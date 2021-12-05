@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    # 设置默认环境
+    active: dev
+
+application:
+  # 应用名称
+  name: @artifactId@
+  version: @version@
+
+server:
+  servlet:
+    context-path: /demo
+
+
+
+
