@@ -2,6 +2,11 @@ spring:
   profiles:
     # 设置默认环境
     active: dev
+  # 访问端点信息需要设置用户名和密码
+  security:
+    user:
+      name: luolaoc
+      password: 123456
 
 application:
   # 应用名称
@@ -12,6 +17,20 @@ server:
   servlet:
     context-path: /demo
 
-
+management:
+  # 设置端点端口，和其他接口区分
+  server: 
+    port: 8090
+    servlet:
+      context-path: /sys
+  # 端点健康状态，默认为“never”，设置为“always”可以显示硬盘使用情况和线程情况
+  endpoint:
+    health:
+      show-details: always
+  # 设置端点暴露的哪些内容，默认为["health", "info"]，设置为“'*'”暴露所有可访问的端点
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 
